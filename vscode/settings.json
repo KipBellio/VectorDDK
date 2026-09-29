@@ -1,0 +1,8 @@
+{
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "tailwindCSS.experimental.classRegex": {
+    "css": ["@apply\\s+([\\w-]+\\s*)+"],
+    "jsx": ["className\\s*=\\s*['\"]([^'\"]*)['\"]"]
+  }
+}

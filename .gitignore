@@ -15,8 +15,7 @@
 node_modules/
 .pnpm-store/
 yarn-error.log
-package-lock.json
-pnpm-lock.yaml
+# DO NOT ignore package-lock.json or pnpm-lock.yaml! GitHub Actions needs them.
 
 # =============================================
 # BUILD OUTPUT
@@ -66,14 +65,15 @@ supabase/.branches/
 supabase/.migrations/
 
 # =============================================
-# REPORTS (local diagnostic reports)
+# REPORTS (EXTERNAL DDK APP ONLY)
 # =============================================
-reports/
-*.html
-*.json
-!index.html
-!package.json
-!package-lock.json
+# Only ignore the reports folder at the root level, not your React components!
+/reports/
+# Ignore common report file types ONLY inside that root reports folder
+/reports/*.html
+/reports/*.json
+/reports/*.csv
+/reports/*.pdf
 
 # =============================================
 # PYTHON (for DDK launcher)
@@ -90,8 +90,6 @@ env.bak/
 venv.bak/
 pythonenv*
 *.egg-info/
-dist/
-build/
 *.egg
 
 # =============================================
@@ -107,4 +105,3 @@ session.json
 *.bak
 *.backup
 *.old
-.DS_Store
