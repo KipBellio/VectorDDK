@@ -9,7 +9,7 @@ import {
   ArrowLeft,
   QrCode
 } from 'lucide-react'
-import ReportRenderer from '../../components/ReportRenderer'
+import ReportRenderer from '../ReportRenderer'
 
 const VerifyReport = () => {
   const { reportId } = useParams()
