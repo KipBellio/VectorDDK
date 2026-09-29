@@ -9,7 +9,7 @@ import {
   QrCode
 } from 'lucide-react'
 import { supabase } from '../../lib/supabase'
-import { verifyReport } from '../../lib/VerifyReport'
+import { verifyReport } from './VerifyReport'
 
 const ddkScreenshot = '/ddk-screenshot.png'
 
