@@ -71,6 +71,7 @@ supabase/.migrations/
 reports/
 *.html
 *.json
+!index.html
 !package.json
 !package-lock.json
 
